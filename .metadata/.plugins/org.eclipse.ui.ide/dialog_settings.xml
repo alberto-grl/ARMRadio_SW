@@ -12,6 +12,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\user\STM32Cube\Repository\STM32Cube_FW_H7_V1.3.2\Projects\STM32H743ZI-Nucleo\Examples\ADC\ADC_DualModeInterleaved\SW4STM32"/>
 			<item value="C:\ADCDMA1_LTDC - 260317"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

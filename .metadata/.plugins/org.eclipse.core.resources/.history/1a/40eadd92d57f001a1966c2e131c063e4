@@ -305,6 +305,7 @@ void EXTI1_IRQHandler()
   EXTI->PR = EXTI_Line1;	
 //	NVIC_ClearPendingIRQ(EXTI1_IRQn);
 
+ToglimiCounter++;
 
 PF8_HI;  // set bit 8 of GPIOF high, to be observed with an oscilloscope
 
@@ -377,9 +378,9 @@ PF8_HI;  // set bit 8 of GPIOF high, to be observed with an oscilloscope
 
 #ifdef AG_TEST_AUDIO
 
-  // Sample rate of DAC is 27901.786 Hz set from timer 6 (TIM_TimeBaseInit)
-  // Soft interrupt handler is at 27901.786 / 512 = 54.496 Hz
-  // Generate test square wave with a period of 64 samples = 436 Hz. (32 On 32 Off)
+  // Il DAC ha sample 27901.786 Hz regolato dal timer 6 (TIM_TimeBaseInit)
+  // L'handler dell'interrupt soft è a 27901.786 / 512 = 54.496 Hz
+  // Onda quadra periodo 64 campioni = 436 Hz. (32 On 32 Off)
   for (i=0; i<BSIZE; i++)
   {
 	  if (i % 64 > 31)
@@ -453,7 +454,7 @@ void DMA2_Stream0_IRQHandler(void)
 pR=test_data;
 	k = BSIZE;
 
-//Generate a fake RF carrier at 1.785714 / 16 = 111.607 KHz
+//Simulo onda quadra a  1.785714 / 16 = 111.607 KHz
 
 	 for (k=0; k< BSIZE; k++)
 		{

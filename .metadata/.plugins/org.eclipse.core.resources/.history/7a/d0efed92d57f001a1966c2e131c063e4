@@ -39,10 +39,9 @@
  *
  *
 
- * CMSIS fft routines in that package ( V3.20 ) cause an hardfault.
- * (https://community.arm.com/thread/6192)
- * CMSIS 4.5 is ok but needs the ST Device directory from ST's packaged CMSIS 3.20.
- *
+ * CMSIS library in that package ( V3.20 ) cause an hardfault.
+ * (https://community.arm.com/thread/6192 http://community.silabs.com/t5/32-bit-MCU/arm-rfft-fast-f32-crashes-controller/td-p/108929)
+ * Mettere le 4.5 scaricate da ARM ma copiarci dentro la cartella Device delle CMSIS ST.
  * Download CMSIS 4.5 from https://github.com/ARM-software/CMSIS/archive/v4.5.0.zip
  * Rename C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS to C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS_FromST
  * Copy CMSIS 4.5 in C:\STM32F429I-Discovery_FW_V1.0.1\Libraries
