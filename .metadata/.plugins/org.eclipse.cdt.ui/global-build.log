@@ -1,27 +1,9 @@
-16:27:15 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+21:29:01 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
 make all 
-Building file: ../src/main.c
-Invoking: MCU GCC Compiler
-C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
-                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
-                 from ../src/main.c:87:
-C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
-       #define __FPU_USED       1U
- 
-<command-line>:0:0: note: this is the location of the previous definition
-Finished building: ../src/main.c
- 
-Building target: ARMRadio_SW.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
-Finished building target: ARMRadio_SW.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
-arm-none-eabi-size "ARMRadio_SW.elf"
-   text	   data	    bss	    dec	    hex	filename
- 128092	  62500	  49468	 240060	  3a9bc	ARMRadio_SW.elf
- 
+make: Nothing to be done for 'all'.
+
+21:29:02 Build Finished (took 419ms)
+
+21:29:03 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+make all 
+make: Nothing to be done for 'all'.

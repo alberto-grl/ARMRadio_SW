@@ -14,6 +14,10 @@
   * @retval None
   */
 
+#define DISPLAY_H 320
+#define CELL_H 36
+#define CELL_W 60
+
 void DisplayFrequency(void)
 {
 	 uint8_t aTextBuffer[50];
@@ -45,75 +49,75 @@ void Touch(void)
 
 	Old_TP_State = TP_State->TouchDetected;
 
-	if ((TP_State->TouchDetected) && (TP_State->Y <= 320)
-			&& (TP_State->Y >= 320 - 36) && (TP_State->X >= 0)
-			&& (TP_State->X <= 120)) {
+	if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H) && (TP_State->X >= 0)
+			&& (TP_State->X <= 2 * CELL_W)) {
 		FminusClicked();
 		DisplayFrequency();
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320)
-			&& (TP_State->Y >= 320 - 36) && (TP_State->X >= 121)
-			&& (TP_State->X <= 240)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H) && (TP_State->X >= 2 * CELL_W + 1)
+			&& (TP_State->X <= 4 * CELL_W)) {
 		FplusClicked();
 		DisplayFrequency();
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36)
-			&& (TP_State->Y >= 320 - 2 * 36) && (TP_State->X >= 0)
-			&& (TP_State->X <= 120)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 2) && (TP_State->X >= 0)
+			&& (TP_State->X <= 2 * CELL_W)) {
 		volume -= 0.1;
 		if (volume < 0)
 			volume = 0;
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36)
-			&& (TP_State->Y >= 320 - 2 * 36) && (TP_State->X >= 121)
-			&& (TP_State->X <= 240)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 2) && (TP_State->X >= 2 * CELL_W + 1)
+			&& (TP_State->X <= 4 * CELL_W)) {
 		volume += 0.1;
 		if (volume > 1.0)
 			volume = 1.0;
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 2)
-			&& (TP_State->Y >= 320 - 36 * 3) && (TP_State->X >= 0)
-			&& (TP_State->X <= 60)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 2)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 3) && (TP_State->X >= 0)
+			&& (TP_State->X <= CELL_W)) {
 		SetFstep(4);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 2)
-			&& (TP_State->Y >= 320 - 36 * 3) && (TP_State->X >= 61)
-			&& (TP_State->X <= 120)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 2)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 3) && (TP_State->X >= CELL_W + 1)
+			&& (TP_State->X <= 2 * CELL_W)) {
 		SetFstep(3);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 2)
-			&& (TP_State->Y >= 320 - 36 * 3) && (TP_State->X >= 121)
-			&& (TP_State->X <= 180)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 2)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 3) && (TP_State->X >= 2 * CELL_W + 1)
+			&& (TP_State->X <= 3 * CELL_W)) {
 		SetFstep(2);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 2)
-			&& (TP_State->Y >= 320 - 36 * 3) && (TP_State->X >= 181)
-			&& (TP_State->X <= 240)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 2)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 3) && (TP_State->X >= 3 * CELL_W + 1)
+			&& (TP_State->X <= 4 * CELL_W)) {
 		SetFstep(1);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 3)
-			&& (TP_State->Y >= 320 - 36 * 4) && (TP_State->X >= 0)
-			&& (TP_State->X <= 60)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 3)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 4) && (TP_State->X >= 0)
+			&& (TP_State->X <= CELL_W)) {
 		SetMode(AM);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 3)
-			&& (TP_State->Y >= 320 - 36 * 4) && (TP_State->X >= 61)
-			&& (TP_State->X <= 120)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 3)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 4) && (TP_State->X >= CELL_W + 1)
+			&& (TP_State->X <= 2 * CELL_W)) {
 		SetMode(LSB);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 3)
-			&& (TP_State->Y >= 320 - 36 * 4) && (TP_State->X >= 121)
-			&& (TP_State->X <= 180)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 3)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 4) && (TP_State->X >= 2 * CELL_W + 1)
+			&& (TP_State->X <= 3 * CELL_W)) {
 		SetMode(USB);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 3)
-			&& (TP_State->Y >= 320 - 36 * 4) && (TP_State->X >= 181)
-			&& (TP_State->X <= 240)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 3)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 4) && (TP_State->X >= 3 * CELL_W + 1)
+			&& (TP_State->X <= 4 * CELL_W)) {
 		SetMode(CW);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 4)
-			&& (TP_State->Y >= 320 - 36 * 5) && (TP_State->X >= 0)
-			&& (TP_State->X <= 60)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 4)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 5) && (TP_State->X >= 0)
+			&& (TP_State->X <= CELL_W)) {
 		SetAGC(Fast);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 4)
-			&& (TP_State->Y >= 320 - 36 * 5) && (TP_State->X >= 61)
-			&& (TP_State->X <= 120)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 4)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 5) && (TP_State->X >= CELL_W + 1)
+			&& (TP_State->X <= 2 * CELL_W)) {
 		SetAGC(Slow);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 4)
-			&& (TP_State->Y >= 320 - 36 * 5) && (TP_State->X >= 121)
-			&& (TP_State->X <= 180)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 4)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 5) && (TP_State->X >= 2 * CELL_W + 1)
+			&& (TP_State->X <= 3 * CELL_W)) {
 		SetBW(Narrow);
-	} else if ((TP_State->TouchDetected) && (TP_State->Y <= 320 - 36 * 4)
-			&& (TP_State->Y >= 320 - 36 * 5) && (TP_State->X >= 181)
-			&& (TP_State->X <= 240)) {
+	} else if ((TP_State->TouchDetected) && (TP_State->Y <= DISPLAY_H - CELL_H * 4)
+			&& (TP_State->Y >= DISPLAY_H - CELL_H * 5) && (TP_State->X >= 3 * CELL_W + 1)
+			&& (TP_State->X <= 4 * CELL_W)) {
 		SetBW(Wide);
 	} else {
 	}
@@ -182,11 +186,11 @@ void Display_Init(void)
 
   for (n=0; n<6; n++)
   {
-	  LCD_DrawLine(0, 319 - n*36, 240, LCD_DIR_HORIZONTAL);
+	  LCD_DrawLine(0, 319 - n*CELL_H, 240, LCD_DIR_HORIZONTAL);
   }
-  LCD_DrawLine(120, 319 - 5*36, 5*36, LCD_DIR_VERTICAL);
-  LCD_DrawLine(60, 319 - 5*36, 3*36, LCD_DIR_VERTICAL);
-  LCD_DrawLine(180, 319 - 5*36, 3*36, LCD_DIR_VERTICAL);
+  LCD_DrawLine(120, 319 - 5*CELL_H, 5*CELL_H, LCD_DIR_VERTICAL);
+  LCD_DrawLine(60, 319 - 5*CELL_H, 3*CELL_H, LCD_DIR_VERTICAL);
+  LCD_DrawLine(180, 319 - 5*CELL_H, 3*CELL_H, LCD_DIR_VERTICAL);
   LCD_SetFont(&Font16x24);
 
 }

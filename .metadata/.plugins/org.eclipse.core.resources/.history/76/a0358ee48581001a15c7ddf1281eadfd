@@ -261,7 +261,7 @@ void FminusClicked()
 // Toggle the ON/OFF status of the two on-board Leds
 void LED_switch()
 {	
-
+  static uint32_t timer_cnt = 0;
 	
   //if (++timer_cnt & 1) {LED_On(1); LED_Off(0);} 
 	//else                 {LED_On(0); LED_Off(1);}	
@@ -292,6 +292,7 @@ void Error_Handler(void)
 void EXTI1_IRQHandler()   
 {
   short  *p;
+  static int32_t ToglimiCounter;
 
 	
 //#define AG_TEST_AUDIO
@@ -366,9 +367,7 @@ PF8_HI;  // set bit 8 of GPIOF high, to be observed with an oscilloscope
 
 		case  CW :	
 		  SDR_demodSSB_CW_AGC(tmpSamp, fAudio);
-		  if(bw[CW] == Narrow)
-			  SDR_CWPeak(fAudio, BSIZE);
-		  break;
+      if(bw[CW] == Narrow) SDR_CWPeak(fAudio, BSIZE); break;
 		
 		default:  
 		  break;

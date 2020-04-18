@@ -32,7 +32,7 @@ static char pNames[MAXPRESETS][16] =
    "Radio Europe 1","UK BBC 4", "Monte Carlo","Polskie R1", "Beacon ARI-MI", "Italy RAI 1"};
 
 static float pFreqs[MAXPRESETS] =
- {0.f, 900000.f, 531000.f, 657000.f, 639000.f, 549000.f, 558000.f, 476180.f, 474000.f, 472400.f,
+ {0.f, 540000.f, 531000.f, 657000.f, 639000.f, 549000.f, 558000.f, 476180.f, 474000.f, 472400.f,
   594000.f, 472000.f, 610000.f, 617000.f};
 /*
   {0.f, 17200.f, 18300.f, 60000.f, 77500.f, 147300.f, 153000.f, 162000.f, 183000.f, 198000.f,

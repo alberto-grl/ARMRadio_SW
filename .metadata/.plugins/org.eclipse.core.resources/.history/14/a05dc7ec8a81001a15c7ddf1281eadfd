@@ -123,8 +123,8 @@ int main(void)
 	// Configure the System clock for a frequency of 200 MHz
 //	  SystemClock_Config();
 
-	//TODO SetSysClock does not work, changed PLL_N  to 400 in system_stm32f4xx.c
-	// SetSysClockTo200();
+	//TODO sembra non funzionare, per ora cambiato PLL_N    400 in system_stm32f4xx.c
+	 SetSysClockTo200();
 
 
 #ifdef USE_LCD
@@ -252,8 +252,6 @@ void SetSysClockTo200(void)
 {
   /* SYSCLK, HCLK, PCLK2 and PCLK1 configuration -----------------------------*/
   /* RCC system reset(for debug purpose) */
-/* TODO Does not work */
-
 
 ErrorStatus HSEStartUpStatus;
 

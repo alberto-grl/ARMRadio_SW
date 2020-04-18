@@ -275,8 +275,8 @@ volatile 	float        w, tmp;
 	for(k=j=0; k<BSIZE*2; k+=2)
 	{
 	  tmp = tmpSamp[k]*tmpSamp[k] + tmpSamp[k+1]*tmpSamp[k+1];
-	  arm_sqrt_f32(tmp, &audiotmp);      // implement also the AM demod
-
+//	  arm_sqrt_f32(tmp, &audiotmp);      // implement also the AM demod //TODO controllare se funziona
+	audiotmp = sqrtf(tmp);
 	  if(pk < audiotmp)
 	  {
 			pk = audiotmp;
