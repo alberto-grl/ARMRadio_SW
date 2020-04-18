@@ -100,6 +100,12 @@
 __IO uint16_t uhADCDualConvertedValue;
   
 /* Private function prototypes -----------------------------------------------*/
+/*
+#ifdef USE_LCD
+static void Display_Init(void);
+static void Display(void);
+static void Touch(void);
+#endif /* USE_LCD */
 
 
 /* Private functions ---------------------------------------------------------*/

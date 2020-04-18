@@ -28,7 +28,8 @@ C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.
 ../src/stm32f4xx_spi.c \
 ../src/stm32f4xx_syscfg.c \
 ../src/stm32f4xx_tim.c \
-../src/system_stm32f4xx.c 
+../src/system_stm32f4xx.c \
+../src/user_interface.c 
 
 OBJS += \
 ./src/SDR_InitPeriph.o \
@@ -55,7 +56,8 @@ OBJS += \
 ./src/stm32f4xx_spi.o \
 ./src/stm32f4xx_syscfg.o \
 ./src/stm32f4xx_tim.o \
-./src/system_stm32f4xx.o 
+./src/system_stm32f4xx.o \
+./src/user_interface.o 
 
 C_DEPS += \
 ./src/SDR_InitPeriph.d \
@@ -82,7 +84,8 @@ C_DEPS += \
 ./src/stm32f4xx_spi.d \
 ./src/stm32f4xx_syscfg.d \
 ./src/stm32f4xx_tim.d \
-./src/system_stm32f4xx.d 
+./src/system_stm32f4xx.d \
+./src/user_interface.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

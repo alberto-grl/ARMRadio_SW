@@ -23,5 +23,6 @@
 "src/stm32f4xx_syscfg.o"
 "src/stm32f4xx_tim.o"
 "src/system_stm32f4xx.o"
+"src/user_interface.o"
 "startup/startup_stm32.o"
 "startup/sysmem.o"

@@ -844,7 +844,7 @@ extern void SetAGC(Agctype);
 extern void SetBW(Bwidth);
 extern void SetMode(Mode);
 
-extern void DisplayFrequency(void);
+static void DisplayFrequency(void);
 extern void Touch(void);
 extern void Display(void);
 extern void Display_Init(void);

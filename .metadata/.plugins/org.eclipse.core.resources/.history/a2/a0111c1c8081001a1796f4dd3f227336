@@ -845,9 +845,9 @@ extern void SetBW(Bwidth);
 extern void SetMode(Mode);
 
 extern void DisplayFrequency(void);
-extern void Touch(void);
-extern void Display(void);
-extern void Display_Init(void);
+extern static void Touch(void);
+extern static void Display(void);
+extern static void Display_Init(void);
 
 
 
