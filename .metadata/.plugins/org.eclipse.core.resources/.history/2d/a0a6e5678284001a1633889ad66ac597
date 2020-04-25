@@ -22,7 +22,6 @@ void DisplayFrequency(void)
 {
 	 uint8_t aTextBuffer[50];
 	 sprintf((char*)aTextBuffer, "F %-4.3f KHz", (LOfreq/1000.0));
-	  LCD_SetTextColor(LCD_COLOR_WHITE);
 	    LCD_DisplayStringLine(LCD_LINE_3, (uint8_t*)aTextBuffer);
 }
 
@@ -137,7 +136,6 @@ void Display(void)
 
 
   sprintf((char*)aTextBuffer, "S %-4.1f ", SValue);
-  LCD_SetTextColor(LCD_COLOR_YELLOW);
   LCD_DisplayStringLine(LCD_LINE_2, (uint8_t*)aTextBuffer);
 
 }
@@ -193,11 +191,7 @@ void Display_Init(void)
   LCD_DrawLine(120, 319 - 5*CELL_H, 5*CELL_H, LCD_DIR_VERTICAL);
   LCD_DrawLine(60, 319 - 5*CELL_H, 3*CELL_H, LCD_DIR_VERTICAL);
   LCD_DrawLine(180, 319 - 5*CELL_H, 3*CELL_H, LCD_DIR_VERTICAL);
-
   LCD_SetFont(&Font16x24);
-
-  LCD_SetTextColor(LCD_COLOR_CYAN);
-  LCD_DisplayStringLine(LINE(0), (uint8_t*) " I2PHD   I4NZX ");
 
 }
 #endif /* USE_LCD */

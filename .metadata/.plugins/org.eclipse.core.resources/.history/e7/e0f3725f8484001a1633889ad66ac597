@@ -197,7 +197,7 @@ void Display_Init(void)
   LCD_SetFont(&Font16x24);
 
   LCD_SetTextColor(LCD_COLOR_CYAN);
-  LCD_DisplayStringLine(LINE(0), (uint8_t*) " I2PHD   I4NZX ");
+  LCD_DisplayStringLine(LINE(1), (uint8_t*) "  I2PHD     I4NZX ");
 
 }
 #endif /* USE_LCD */

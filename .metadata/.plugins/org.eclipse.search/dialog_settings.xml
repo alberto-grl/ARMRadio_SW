@@ -10,52 +10,13 @@
 		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="TextSearchPage">
-		<item value="7" key="HISTORY_SIZE"/>
+		<item value="11" key="HISTORY_SIZE"/>
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="WHOLE_WORD"/>
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="false" key="SEARCH_IN_BINARIES"/>
 		<section name="HISTORY6">
-			<item value="true" key="ignoreCase"/>
-			<item value="0" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="fonts.h" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY4">
-			<item value="true" key="ignoreCase"/>
-			<item value="0" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="INMAIN" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY5">
-			<item value="true" key="ignoreCase"/>
-			<item value="0" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="FIRcoefs" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="EXTENSIONS">
-			<item value="*" key="0"/>
-		</section>
-		<section name="HISTORY2">
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
@@ -67,7 +28,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY3">
+		<section name="HISTORY7">
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
@@ -79,7 +40,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY0">
+		<section name="HISTORY4">
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
@@ -91,11 +52,98 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY1">
+		<section name="HISTORY10">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="fonts.h" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY5">
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
 			<item value="inmain" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="EXTENSIONS">
+			<item value="*" key="0"/>
+		</section>
+		<section name="HISTORY8">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="INMAIN" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="FIRcoefs" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="section" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="todo" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY0">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="green" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY1">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="ccm" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -122,6 +170,9 @@
 			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
 			<item value="org.eclipse.egit.ui.commitSearchPage"/>
 		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
+		<item value="true" key="showEnclosingDefinitions"/>
 	</section>
 	<section name="SearchDialog">
 		<item value="org.eclipse.search.internal.ui.text.TextSearchPage" key="PREVIOUS_PAGE"/>

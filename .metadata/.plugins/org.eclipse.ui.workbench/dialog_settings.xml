@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="517" key="DIALOG_X_ORIGIN"/>
+		<item value="-45" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
+		<item value=".map" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
+		<item value="org.eclipse.cdt.ui.editor.CEditor" key="EditorSelectionDialog.STORE_ID_DESCR"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
 		<item value="-1" key="dialogWidth"/>
@@ -11,6 +20,13 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="698" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="715" key="DIALOG_HEIGHT"/>
+		<item value="16" key="DIALOG_X_ORIGIN"/>
+		<item value="-226" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

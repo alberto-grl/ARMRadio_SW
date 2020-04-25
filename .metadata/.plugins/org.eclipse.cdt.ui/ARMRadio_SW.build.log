@@ -1,6 +1,6 @@
-21:29:03 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+12:43:15 **** Build of configuration Debug for project ARMRadio_SW ****
 make all 
 make: Nothing to be done for 'all'.
 
-21:29:03 Build Finished (took 418ms)
+12:43:15 Build Finished (took 524ms)
 

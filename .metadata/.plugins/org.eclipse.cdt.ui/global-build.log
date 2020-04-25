@@ -7,3 +7,214 @@ make: Nothing to be done for 'all'.
 21:29:03 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
 make all 
 make: Nothing to be done for 'all'.
+10:48:14 **** Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building file: ../src/SDR_func.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/SDR_func.d" -MT"src/SDR_func.o" -o "src/SDR_func.o" "../src/SDR_func.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/SDR_func.c:25:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+../src/SDR_func.c: In function 'Tune_Preset':
+../src/SDR_func.c:65:12: warning: variable 'Hz' set but not used [-Wunused-but-set-variable]
+   int kHz, Hz;
+            ^~
+../src/SDR_func.c: In function 'DMA2_Stream0_IRQHandler':
+../src/SDR_func.c:573:104: warning: 'tmp3I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO4Rold+inO4Rold2+4.f*(inER+inE4Rold)); outI=(inOI+6.f*inO4Iold+inO4Iold2+4.f*(inEI+inE4Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:573:48: warning: 'tmp3R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO4Rold+inO4Rold2+4.f*(inER+inE4Rold)); outI=(inOI+6.f*inO4Iold+inO4Iold2+4.f*(inEI+inE4Iold));
+                                           ~~~~~^~~~~~~~~~
+../src/SDR_func.c:556:104: warning: 'tmp2I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO3Rold+inO3Rold2+4.f*(inER+inE3Rold)); outI=(inOI+6.f*inO3Iold+inO3Iold2+4.f*(inEI+inE3Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:556:48: warning: 'tmp2R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO3Rold+inO3Rold2+4.f*(inER+inE3Rold)); outI=(inOI+6.f*inO3Iold+inO3Iold2+4.f*(inEI+inE3Iold));
+                                           ~~~~~^~~~~~~~~~
+../src/SDR_func.c:539:104: warning: 'tmp1I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO2Rold+inO2Rold2+4.f*(inER+inE2Rold)); outI=(inOI+6.f*inO2Iold+inO2Iold2+4.f*(inEI+inE2Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:539:48: warning: 'tmp1R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO2Rold+inO2Rold2+4.f*(inER+inE2Rold)); outI=(inOI+6.f*inO2Iold+inO2Iold2+4.f*(inEI+inE2Iold));
+                                           ~~~~~^~~~~~~~~~
+Finished building: ../src/SDR_func.c
+ 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128108	  62500	  49468	 240076	  3a9cc	ARMRadio_SW.elf
+ 
+12:17:02 **** Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building file: ../src/user_interface.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/user_interface.d" -MT"src/user_interface.o" -o "src/user_interface.o" "../src/user_interface.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/user_interface.c:8:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/user_interface.c
+ 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128132	  62500	  49468	 240100	  3a9e4	ARMRadio_SW.elf
+ 
+12:22:23 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building file: ../src/SDR_func.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/SDR_func.d" -MT"src/SDR_func.o" -o "src/SDR_func.o" "../src/SDR_func.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/SDR_func.c:25:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+../src/SDR_func.c: In function 'Tune_Preset':
+../src/SDR_func.c:65:12: warning: variable 'Hz' set but not used [-Wunused-but-set-variable]
+   int kHz, Hz;
+            ^~
+../src/SDR_func.c: In function 'DMA2_Stream0_IRQHandler':
+../src/SDR_func.c:573:104: warning: 'tmp3I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO4Rold+inO4Rold2+4.f*(inER+inE4Rold)); outI=(inOI+6.f*inO4Iold+inO4Iold2+4.f*(inEI+inE4Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:573:48: warning: 'tmp3R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO4Rold+inO4Rold2+4.f*(inER+inE4Rold)); outI=(inOI+6.f*inO4Iold+inO4Iold2+4.f*(inEI+inE4Iold));
+                                           ~~~~~^~~~~~~~~~
+../src/SDR_func.c:556:104: warning: 'tmp2I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO3Rold+inO3Rold2+4.f*(inER+inE3Rold)); outI=(inOI+6.f*inO3Iold+inO3Iold2+4.f*(inEI+inE3Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:556:48: warning: 'tmp2R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO3Rold+inO3Rold2+4.f*(inER+inE3Rold)); outI=(inOI+6.f*inO3Iold+inO3Iold2+4.f*(inEI+inE3Iold));
+                                           ~~~~~^~~~~~~~~~
+../src/SDR_func.c:539:104: warning: 'tmp1I' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO2Rold+inO2Rold2+4.f*(inER+inE2Rold)); outI=(inOI+6.f*inO2Iold+inO2Iold2+4.f*(inEI+inE2Iold));
+                                                                                                   ~~~~~^~~~~~~~~~
+../src/SDR_func.c:539:48: warning: 'tmp1R' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     outR=(inOR+6.f*inO2Rold+inO2Rold2+4.f*(inER+inE2Rold)); outI=(inOI+6.f*inO2Iold+inO2Iold2+4.f*(inEI+inE2Iold));
+                                           ~~~~~^~~~~~~~~~
+Finished building: ../src/SDR_func.c
+ 
+Building file: ../src/user_interface.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/user_interface.d" -MT"src/user_interface.o" -o "src/user_interface.o" "../src/user_interface.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/user_interface.c:8:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/user_interface.c
+ 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128132	  62500	  49468	 240100	  3a9e4	ARMRadio_SW.elf
+ 
+12:22:49 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128132	  62500	  49468	 240100	  3a9e4	ARMRadio_SW.elf
+ 
+12:29:34 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building file: ../src/user_interface.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/user_interface.d" -MT"src/user_interface.o" -o "src/user_interface.o" "../src/user_interface.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/user_interface.c:8:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/user_interface.c
+ 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128180	  62500	  49468	 240148	  3aa14	ARMRadio_SW.elf
+ 
+12:31:06 **** Incremental Build of configuration Debug for project ARMRadio_SW ****
+make all 
+Building file: ../src/user_interface.c
+Invoking: MCU GCC Compiler
+C:\Users\user\ArmRadio_SW\ARMRadio_SW\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F429ZITx -D__FPU_USED -DSTM32F429_439xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DSTM32F429_439xx -DUSE_STM32F429I_DISCO -DSTM32F429I_DISC1 -DSTM32F4 -DSTM32 -DDEBUG -DARM_MATH_CM4 -I"C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/STM32F429I-Discovery" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/STM32F4xx_StdPeriph_Driver/inc" -I"C:/STM32F429I-Discovery_FW_V1.0.1/Utilities/Common" -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/user_interface.d" -MT"src/user_interface.o" -o "src/user_interface.o" "../src/user_interface.c"
+In file included from C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:463:0,
+                 from C:/Users/user/ArmRadio_SW/ARMRadio_SW/inc/main.h:74,
+                 from ../src/user_interface.c:8:
+C:/STM32F429I-Discovery_FW_V1.0.1/Libraries/CMSIS/Include/core_cm4.h:151:0: warning: "__FPU_USED" redefined
+       #define __FPU_USED       1U
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/user_interface.c
+ 
+Building target: ARMRadio_SW.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -L"C:\STM32F429I-Discovery_FW_V1.0.1\Libraries\CMSIS\Lib\GCC" -specs=nosys.specs -specs=nano.specs -u _printf_float -T"C:/Users/user/ArmRadio_SW/ARMRadio_SW/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ARMRadio_SW.elf" @"objects.list"  -l"arm_cortexM4lf_math" -lm
+Finished building target: ARMRadio_SW.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "ARMRadio_SW.elf" "ARMRadio_SW.bin"
+arm-none-eabi-size "ARMRadio_SW.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 128172	  62500	  49468	 240140	  3aa0c	ARMRadio_SW.elf
+ 
+12:43:15 **** Build of configuration Debug for project ARMRadio_SW ****
+make all 
+make: Nothing to be done for 'all'.

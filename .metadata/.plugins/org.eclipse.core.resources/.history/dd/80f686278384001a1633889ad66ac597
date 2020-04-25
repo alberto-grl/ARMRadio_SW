@@ -38,10 +38,10 @@ static float pFreqs[MAXPRESETS] =
 
 /* RAI Siziano, PLA Pula, GAZ Gazoldo, COD Codogno, VIC Vicenza, LNE Linate */
 static float pFreqs[MAXPRESETS] =
- {0.f, 900000.f, 352500.f, 383000.f, 387000.f, 401500.f, 418000.f, 558000.f, 474000.f, 472400.f,
+ {0.f, 900000.f, 352500.f, 383050.f, 385090.f, 401650.f, 416160.f, 558000.f, 474000.f, 472400.f,
   594000.f, 472000.f, 610000.f, 617000.f};
   static Mode pModes[MAXPRESETS] =
- {AM, AM, CW, CW, CW, CW, AM, CW, CW, CW, CW, CW, AM, AM};
+ {AM, CW, CW, CW, CW, CW, AM, CW, CW, CW, AM, CW, AM, AM};
 
 
 /*
