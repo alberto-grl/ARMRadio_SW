@@ -2,20 +2,63 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< Updated upstream
 		<item value="CELL_H" key="selection"/>
+=======
+<<<<<<< Updated upstream
+		<item value="DMA_DoubleBufferModeConfig" key="selection"/>
+=======
+<<<<<<< Updated upstream
+		<item value="CELL_H" key="selection"/>
+=======
+		<item value="" key="selection"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< Updated upstream
 			<item value="ccm"/>
 			<item value="display"/>
 			<item value="ADC_Data"/>
+=======
+<<<<<<< Updated upstream
+			<item value="main"/>
+			<item value="flip"/>
+			<item value="ADC_Data0"/>
+			<item value="DMA_DoubleBufferModeConfig"/>
+			<item value="pong"/>
+			<item value="ccm"/>
+			<item value="display"/>
+			<item value="ADC_Data"/>
+=======
+<<<<<<< Updated upstream
+			<item value="ccm"/>
+			<item value="display"/>
+			<item value="ADC_Data"/>
+>>>>>>> Stashed changes
 			<item value="adc"/>
 			<item value="ADC"/>
 			<item value="FminusClicked"/>
 			<item value="font16"/>
 			<item value="todo"/>
+<<<<<<< Updated upstream
+=======
+=======
+			<item value="sampler"/>
+			<item value="main"/>
+			<item value="flip"/>
+			<item value="ADC_Data0"/>
+			<item value="DMA_DoubleBufferModeConfig"/>
+			<item value="pong"/>
+			<item value="ccm"/>
+			<item value="display"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -20,7 +20,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="fircoefs.h" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="inmain" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="fircoefs.h" key="textPattern"/>
+=======
+			<item value="font12x12" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -32,7 +44,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="NUMFIRCOEFS" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="fircoefs.h" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="NUMFIRCOEFS" key="textPattern"/>
+=======
+			<item value="inmain" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -44,7 +68,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="font12x12" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="todo" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="font12x12" key="textPattern"/>
+=======
+			<item value="section" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -56,7 +92,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="fonts.h" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="FIRcoefs" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="fonts.h" key="textPattern"/>
+=======
+			<item value="INMAIN" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -68,7 +116,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="inmain" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="font12x12" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="inmain" key="textPattern"/>
+=======
+			<item value="todo" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -79,11 +139,51 @@
 		<section name="EXTENSIONS">
 			<item value="*" key="0"/>
 		</section>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+		<section name="HISTORY11">
+			<item value="true" key="ignoreCase"/>
+			<item value="0" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
+			<item value="fonts.h" key="textPattern"/>
+=======
+			<item value="FIRcoefs" key="textPattern"/>
+>>>>>>> Stashed changes
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 		<section name="HISTORY8">
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="INMAIN" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="NUMFIRCOEFS" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="INMAIN" key="textPattern"/>
+=======
+			<item value="fircoefs.h" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -95,7 +195,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="FIRcoefs" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="INMAIN" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="FIRcoefs" key="textPattern"/>
+=======
+			<item value="NUMFIRCOEFS" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -107,7 +219,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="section" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="ccm" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="section" key="textPattern"/>
+=======
+			<item value="green" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -119,7 +243,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="todo" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="section" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="todo" key="textPattern"/>
+=======
+			<item value="ccm" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -131,7 +267,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="green" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="ADC_Data1" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="green" key="textPattern"/>
+=======
+			<item value="SamplingRate" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -143,7 +291,19 @@
 			<item value="true" key="ignoreCase"/>
 			<item value="0" key="scope"/>
 			<item value="false" key="isWholeWord"/>
+<<<<<<< Updated upstream
 			<item value="ccm" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="green" key="textPattern"/>
+=======
+<<<<<<< Updated upstream
+			<item value="ccm" key="textPattern"/>
+=======
+			<item value="ADC_Data1" key="textPattern"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>

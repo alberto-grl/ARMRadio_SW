@@ -3,7 +3,22 @@ approved.defs.file.last.changed.time=1585005899000
 configurationInstallLocation=/C\:/Ac6/SystemWorkbench/
 eclipse.preferences.version=1
 iconcolormode=primary
+<<<<<<< Updated upstream
 last.download.attempt.time=1587811242187
 lastConfiguration=1587811228568
+=======
+<<<<<<< Updated upstream
+last.download.attempt.time=1588347796942
+lastConfiguration=1588760210807
+=======
+<<<<<<< Updated upstream
+last.download.attempt.time=1587811242187
+lastConfiguration=1587811228568
+=======
+last.download.attempt.time=1588760229864
+lastConfiguration=1588760210807
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 newinstall=true
 workbench.theme=Dark Gray
